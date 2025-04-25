@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --color-primaria: #000000;
+    --color-secundaria: #F6F6F6;
+    --color-terciaria: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primaria);
+    color: var(--color-secundaria);
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+.header__menu__link{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciaria);
+    text-decoration: none;
+    
+
+
+}
+
+.logo {
+    position: absolute;
+    top: 20px; /* Ajusta según lo necesites */
+    left: 65px; /* Ajusta según lo necesites */
+    width: 60px; /* Tamaño del logo */
+    height: auto; /* Mantiene 70la proporción */
+}
+
+.presentacion {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row; 
+}
+
+.presentacion__contenido {
+    width: 100%; /* Ajusta el ancho del contenido principal */
+    
+    
+}
+
+
+.presentacion__contenido__titulo{
+    font-size: 2rem;
+    margin: 40px 40px;
+    font-family: var(--fuente-krona);
+}
+
+.presentacion__subtitulo{
+    font-size: 1rem;
+    margin: 40px 40px;
+    font-family: var(--fuente-krona);
+}
+
+.titulo-destaque {
+    color: var(--color-terciaria); ;
+}
+
+.presentacion__contenido__texto{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+.presentacion__contenido__texto_pequeño{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: var(--fuente-krona);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.presentacion__enlaces__link{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      border: 2px solid var(--color-terciaria);
+      width: 50%;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 21.5px 0;
+      text-decoration: none;
+      color: var(--color-secundaria);
+      font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces__link:hover{
+    background-color: var(--color-hover);
+}
+
+.presentacion__imagen{
+    width: 40%;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.preguntas__imagen {
+    margin-top: 190px;
+    width: 100%; /* Ocupan el ancho disponible */
+    max-width: 600px; /* Tamaño máximo ajustable */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+
+}
+
+.footer{
+    color:var(--color-primaria);
+    background-color: var(--color-terciaria);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    
+    .header{
+         padding: 10%;
+           
+    }
+    .header__menu{
+        justify-content: center;
+        margin: 20px 40px;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+    }
+    
+}
+/*////////////// Pagina Preguntas Frecuentes */
+.faq {
+    font-family: var(--fuente-montserrat);
+    padding: 30px;
+    max-width: 1000px;
+    margin: 20px 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #0f0615;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 40px
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #6a0dad;
+}
+
+.faq-answer {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 10px;
+}
+/*////////////// Pagina Contacto Mapa */
+.map-container {
+    flex: 1;
+    margin-left: 50px;  
+    margin-top: 50px; 
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+/*////////////// Iconos redes sociales sprint */
+.boton {
+    display: block;
+    text-indent: -9999px;
+    width: 31.25px; /* Aún más pequeño */
+    height: 31.25px; /* Aún más pequeño */
+    background-image: url('../assets/sprint2.png');
+    background-repeat: no-repeat;
+    background-size: 62.5px 62.5px; /* Escala el sprite a un cuarto */
+    margin-top: 2px; /* Ajusta este valor según lo necesites */
+    margin-left: 1450px;
+    
+}
+
+.instagram {
+    background-position: 0 0;
+}
+
+.facebook {
+    background-position: -31.25px 0;
+}
+
+.twitter {
+    background-position: 0 -31.25px;
+}
+
+.whatsapp {
+    background-position: -31.25px -31.25px;
+}
+
+.inferior-derecha {
+    position: fixed; /* Posición fija para mantenerlos visibles al desplazarse */
+    
+}
+
